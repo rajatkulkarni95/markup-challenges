@@ -1,0 +1,87 @@
+/* BROWSER RESETS */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: rgb(74, 117, 197);
+  --text-accent-color: rgb(141, 141, 140);
+  --color-white: rgb(255, 255, 255);
+  --hover-background: rgb(245, 245, 245);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  height: 100vh;
+  background-color: var(--primary-color);
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  background-color: var(--color-white);
+  width: 67%;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.card {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px 40px;
+  height: 300px;
+}
+
+.card:hover {
+  border-radius: 4px;
+  background: var(--hover-background);
+}
+
+img {
+  width: 96px;
+  height: 96px;
+  margin: 16px 0 32px 0;
+}
+
+.device-name {
+  letter-spacing: 3.5px;
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.description {
+  color: var(--text-accent-color);
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.price {
+  margin: 16px 0;
+  color: var(--primary-color);
+  font-weight: 700;
+  display: block;
+}
+
+.currency {
+  font-size: 12px;
+}
+
+.rate {
+  font-size: 36px;
+}
